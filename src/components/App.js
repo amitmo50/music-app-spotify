@@ -17,7 +17,7 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <Switch>
-          <Route exact path="/" component={toLoginRoute}/>
+          {/* <Route exact path="/" component={toLoginRoute}/> */}
           <Route exact path="/login" component={Login}/>
           <Route path="/player" component={MusicPlayer}/>  
         </Switch>
