@@ -9,15 +9,15 @@ import Login from './Login/Login';
 
 const App = () => {
 
-  const toLoginRoute = () => {
-    window.location.href = "/login";
-  }
+  // const toLoginRoute = () => {
+  //   window.location.href = "/login";
+  // }
 
   return (
     <Provider store={store}>
       <Router>
         <Switch>
-          <Route exact path="/" component={toLoginRoute}/>
+          {/* <Route exact path="/" component={toLoginRoute}/> */}
           <Route exact path="/login" component={Login}/>
           <Route path="/player" component={MusicPlayer}/>  
         </Switch>
