@@ -10,7 +10,7 @@ import Login from './Login/Login';
 const App = () => {
 
   const toLoginRoute = () => {
-    window.location.href = "https://music-app-spotipy.netlify.app/login";
+    window.location.href = "https://music-app-spotify.netlify.app/login";
   }
 
   return (
