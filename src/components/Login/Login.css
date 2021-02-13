@@ -1,0 +1,31 @@
+.login {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.login img {
+   height: 400px;
+}
+
+.login a {
+    padding: 20px;
+    border-radius:  99px;
+    background-color: #1db954;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .login img {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .login img {
+        height: 100px;
+    }
+}

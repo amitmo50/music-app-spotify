@@ -1,0 +1,124 @@
+.Playbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background: #282828;
+    z-index: 99;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    flex: 0.3;
+}
+.left .song-details .artist {
+    font-size: 10px;
+    color: '#999999';
+    padding: 0;
+    width: 300px;
+    
+}
+.left .song-name {
+    width: 300px;
+    margin: 0;
+    font-size: 12px;
+}
+.left .song-details{
+    display: inline;
+    padding: 2px;
+    margin: 5px;
+    float:left;
+    align-content: center;
+}
+
+.left .album-image{
+    float:left;
+    padding: 2px;
+    margin: 5px;
+    width:50px;
+    height: 50px;
+}
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0.5;
+}
+.middle .fa-play, .middle .fa-pause {
+      font-size: 14px;
+}
+.middle .play-pause-circle {
+    cursor: pointer;
+}
+
+.middle .progress-container {
+    width: 500px;
+    height: 5px;
+    /* position: relative; */
+    background-color: #4f4f4f;
+    margin-top: 10px;
+    display: inline-flex;
+    margin: 10px 10px 0px 10px;
+}
+.middle .progress-container .bar {
+    height: 100%;
+    background-color: rgb(167 167 167);
+}
+.right {
+    flex: 0.2;
+    display: flex;
+    align-items: center;
+}
+.right  .fa-volume-up, .right .fa-volume-off {
+    font-size: 15px;
+}
+.shuffle, .next, .previous, .play-pause-circle, .repeat {
+    cursor: pointer;
+}
+
+.shuffle:hover, 
+.next:hover, 
+.previous:hover, 
+.play-pause-circle:hover, 
+.repeat:hover {
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.2) !important;
+} 
+.control-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 100px; */
+    max-width: 300px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 400px) {
+    .Playbar {
+        height: 130px;
+    }
+    .left .song-details .artist {
+        font-size: 10px;
+    }
+
+    .right  .fa-volume-up, .right .fa-volume-off {
+        font-size: 10px;
+    }
+    .middle .progress-container {
+        width: 200px;
+    }
+    .left {
+        flex: 0.4;
+    }
+    .middle {
+        flex:0.5;
+    }
+    .right {
+        flex: 0.1;
+    } 
+}
+

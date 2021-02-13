@@ -1,0 +1,115 @@
+:root {
+    --color-bg-primary: #131313;
+    --color-bg-secondary: #171717;
+    --color-grad-buttom: #132E56;
+    --color-grad-top: #00716A;
+    --color-green-accent: #2bcc6c;
+    --color-text-primary: #FFFFFF;
+    --color-text-muted: #AAAAAA;
+
+}
+
+.card {
+    width: 300px;
+    padding: 1rem;
+    background: var(--color-bg-secondary);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin: 10px;
+    transition: background 320ms;
+}
+.card:hover {
+    background: #242424;
+}
+.cover {
+    position: relative;
+    background: linear-gradient(var(--color-grad-top), var(--color-grad-buttom));
+    box-shadow: 
+        0 4px 16px rgba(0, 0, 0, 0.4),
+        0 8px 18px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 2rem; */
+}
+.watermark {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    opacity: 0.5;
+}
+
+.cover-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+    padding: 40px;
+    width: 100%;
+}
+
+.cover-title {
+    font-size: 1.2vw;
+    width: 100%;
+    font-weight: 900;
+    color:black;
+}
+.cover-subtitle {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    order: 1;
+}
+.wrapper {
+    position: absolute;
+    right: 0.6rem;
+    bottom: 0.6rem;
+    opacity: 0;
+    transform: translateY(0.6rem);
+    transition:
+        transform 320ms, 
+        opacity 320ms;
+}
+.card:hover .wrapper{
+    transform: translateY(0);
+    opacity: 1;
+}
+.play-button {
+    width: 40px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+}
+.play-button:focus{
+    outline: none;
+}
+.card-name {
+    font-size: 1rem;
+    margin: .6rem 0 .4rem 0;
+}
+
+.card-album-name {
+    font-size: 0.9vw;
+}
+
+.card-about {
+    font-size: 0.9374rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.description{
+    width: 250px;
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.description:hover {
+    white-space:initial;
+}

@@ -1,0 +1,115 @@
+.Sidebar {
+    width: 200px;
+    height: 100%;
+    background: #000000;
+    padding: 20px 20px 20px 0;
+    flex:0.2;
+}
+img {
+  height: 60px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+p {
+  padding-left: 20px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  cursor: pointer;
+  /* font-weight: bold; */
+}
+p.active {
+  border-left: 2px solid white;
+  padding-left: 18px;
+}
+h4.tab-name {
+  margin: 0;
+}
+
+.fa-search, .fa-home, .fa-book, .fa-compact-disc {
+  width: 1em;
+  height: 1em;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.library-tab, .home-tab, .search-tab, .new-release-tab {
+  color: #999;
+  height: 40px;
+  align-items: center;
+  font-weight: normal;
+  display: flex;
+  cursor: pointer;
+  transition: 200ms color ease-in;
+
+}
+.library-tab :hover, .home-tab :hover, .search-tab :hover ,.new-release-tab:hover{
+  color: #fff;
+}
+.sidebar-title {
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 12pxs;
+}
+.Sidebar > hr {
+  border: 1px solid #282828;
+  width: 90%;
+  margin: 10px auto;
+}
+li.new-playlist {
+  position: absolute;
+  bottom: 80px;
+  padding: 10px;
+}
+li.new-playlist i {
+  transform: translateY(1px);
+}
+li.new-playlist i:before {
+  font-size: 20px;
+}
+
+li.new-playlist span {
+  color: #999;
+  font-weight: 300;
+  margin-left: 5px;
+}
+
+form .title {
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+form .content-wrap {
+  margin: 0px auto;
+  max-width: 250px;
+  text-align: center;
+}
+
+form input {
+  margin-bottom: 20px;
+  height: 35px;
+  padding-left: 8px;
+  font-size: 16px;
+  width: 100%;
+  color: black;
+}
+form button {
+  background-color: #2bcc6c;
+  color: white;
+  padding: 12.5px 30px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .Sidebar {
+      width: 150px;
+    }
+    li.new-playlist {
+      bottom: 150px;
+    }
+    
+}
